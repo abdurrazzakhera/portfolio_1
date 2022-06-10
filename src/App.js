@@ -7,7 +7,7 @@ import Contactme from "./Pages/Home/Contactme";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar></Navbar>
       <Home></Home>
       <Portfolios></Portfolios>

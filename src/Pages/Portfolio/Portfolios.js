@@ -11,9 +11,15 @@ const Portfolios = () => {
       });
   }, []);
   return (
-    <div className="lg:container mx-auto">
-      <h1>This is portfolios : {projects.length}</h1>
-      <Portfolio></Portfolio>
+    <div id="portfolio" className="lg:container mx-auto pt-20 mt-10">
+      <h1 className="w-full text-center">
+        This is portfolios : {projects.length}
+      </h1>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+        {projects.map((project) => (
+          <Portfolio key={project._id} project={project}></Portfolio>
+        ))}
+      </div>
     </div>
   );
 };

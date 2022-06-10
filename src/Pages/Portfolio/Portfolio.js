@@ -3,139 +3,71 @@ import projectImg1 from "../../images/material/projec1_img1.png";
 import projectImg2 from "../../images/material/project2_img1.png";
 import projectImg3 from "../../images/material/project3_img1.png";
 
-const Portfolio = () => {
+const Portfolio = ({ project }) => {
+  console.log(project);
+  const {
+    _id,
+    project_name,
+    project_img1,
+    project_img2,
+    dec,
+    live_link,
+    github_server,
+    github_clint,
+    shortDec,
+  } = project;
+
+  const explore = (id) => {
+    console.log(id);
+  };
   return (
-    <div id="portfolio" className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
-      <div class="card card-compact bg-base-100 shadow-xl  ">
-        <figure>
-          <img src={projectImg1} alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Bicycle GearWorld || </h2>
-          <div className="text-left ml-2 mb-5">
-            <ul className="grid grid-cols-1 gap-y-2 list-disc">
-              <li>Use JavaScript React Latest version.</li>
-              <li>React Router V6 use (latest Version).</li>
-              <li>Implement latest Log in Method with Google.</li>
-              <li>Protected Router Setup.</li>
-              <li>Use mongodb crud operation.</li>
-              <li>google firebase use for authentication.</li>
-            </ul>
-          </div>
-          <div class="card-actions justify-center gap-x-5">
-            <a
-              href="https://manufacture-site-12.web.app/"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live Site
-            </a>
-            <a
-              href="https://github.com/abdurrazzakhera/bicycle_manufacture_clint"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Clint
-            </a>
-            <a
-              href="https://github.com/abdurrazzakhera/bicycle_manufacture_server"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Server
-            </a>
-          </div>
+    <div class="card card-compact bg-base-100 shadow-xl  ">
+      <figure class=" w-full h-64  bg-red-100 relative">
+        <div
+          class="  absolute inset-0 bg-cover bg-center z-0"
+          style={{ backgroundImage: `url(${project_img1})` }}
+        ></div>
+        <div class="opacity-0 hover:opacity-100 duration-1000 absolute inset-0 z-10 flex justify-center items-center text-6xl text-black font-semibold bg-opacity-50 bg-white">
+          <button onClick={() => explore(_id)} class="btn btn-primary btn-xl">
+            Explore
+          </button>
         </div>
-      </div>
-      <div class="card card-compact bg-base-100 shadow-xl">
-        <figure>
-          <img src={projectImg2} alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Gadget Mart || WereHouse</h2>
-          <div className="text-left ml-2 mb-5">
-            <ul className="grid grid-cols-1 gap-y-2 list-disc">
-              <li>Use JavaScript React Latest version.</li>
-              <li>React Router V6 use (latest Version).</li>
-              <li>Implement latest Log in Method with Google.</li>
-              <li>Protected Router Setup.</li>
-              <li>Use mongodb crud operation.</li>
-              <li>google firebase use for authentication.</li>
-            </ul>
-          </div>
-          <div class="card-actions justify-center gap-x-5">
-            <a
-              href="https://werehouse-11.web.app/"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live Site
-            </a>
-            <a
-              href="https://github.com/abdurrazzakhera/gadget_mart_wereHouse_clint"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Clint
-            </a>
-            <a
-              href="https://github.com/abdurrazzakhera/-gadget_mart_wereHouse_server"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Server
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card card-compact  bg-base-100 shadow-xl">
-        <figure>
-          <img src={projectImg3} alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">AR'H Photography.</h2>
-          <div className="text-left ml-2 mb-5">
-            <ul className="grid grid-cols-1 gap-y-2 list-disc">
-              <li>Use JavaScript React Latest version.</li>
-              <li>React Router V6 use (latest Version).</li>
-              <li>Implement latest Log in Method with Google.</li>
-              <li>Protected Router Setup.</li>
-              <li>Use mongodb crud operation.</li>
-              <li>google firebase use for authentication.</li>
-            </ul>
-          </div>
-          <div class="card-actions justify-center gap-x-5">
-            <a
-              href="https://independent-service-prov-34e04.web.app/"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live Site
-            </a>
-            <a
-              href="https://github.com/abdurrazzakhera/single_servies_arHera_Creative"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Clint
-            </a>
-            {/* <a
-              href="https://github.com/abdurrazzakhera/single_servies_arHera_Creative"
-              className="btn btn-sm btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Server
-            </a> */}
-          </div>
+        {/* <img src={project_img1} alt="Shoes" /> */}
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">{project_name}</h2>
+        <div className="text-left ml-2 mb-5">{shortDec}</div>
+        <div class="card-actions justify-center gap-x-5">
+          <a
+            href={live_link}
+            className="btn btn-sm btn-secondary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live Site
+          </a>
+          <a
+            href={github_clint}
+            className="btn btn-sm btn-secondary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Clint
+          </a>
+          {github_server ? (
+            <>
+              <a
+                href={github_server}
+                className="btn btn-sm btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Server
+              </a>
+            </>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
