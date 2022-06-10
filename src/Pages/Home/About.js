@@ -14,9 +14,9 @@ const about = () => {
           </h2>
           <button className="btn btn-primary">Recent Project</button>
         </div>
-        <div className="bg-base-200 col-span-5 p-10">
+        <div className=" col-span-5 p-1">
           {/* daisy ui card */}
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src={img1} alt="Shoes" class="rounded-xl" />
             </figure>

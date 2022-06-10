@@ -1,30 +1,3 @@
-// module.exports = {
-//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-//   themes: [
-//     {
-//       mythime2: {
-//         primary: "#f7e11b",
-
-//         secondary: "#8a50ba",
-
-//         accent: "#e5695e",
-
-//         neutral: "#272735",
-
-//         "base-100": "#2E3C57",
-
-//         info: "#53B7D5",
-
-//         success: "#37CDA0",
-
-//         warning: "#EEC144",
-
-//         error: "#DD3C5C",
-//       },
-//     },
-//   ],
-//   plugins: [require("daisyui")],
-// };
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -35,23 +8,23 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#f7e11b",
+          primary: "#38a5d8",
 
-          secondary: "#8a50ba",
+          secondary: "#2fb0c4",
 
-          accent: "#e5695e",
+          accent: "#a03021",
 
-          neutral: "#272735",
+          neutral: "#1D1D2B",
 
-          "base-100": "#2E3C57",
+          "base-100": "#32373E",
 
-          info: "#53B7D5",
+          info: "#3467EA",
 
-          success: "#37CDA0",
+          success: "#20A761",
 
-          warning: "#EEC144",
+          warning: "#F2BA2C",
 
-          error: "#DD3C5C",
+          error: "#E14167",
         },
       },
     ],

@@ -1,7 +1,25 @@
 import React from "react";
-import img1 from "../../images/profile/333.png";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
+  const { text } = useTypewriter({
+    words: [
+      "HTML",
+      "CSS3",
+      "JAVASCRIPT",
+      "REACT JS",
+      "NODE JS",
+      "EXPRESS JS",
+      "MONGO DB",
+    ],
+    loop: 0,
+    typeSpeed: 70,
+    deleteSpeed: 50,
+    delaySpeed: 1500,
+
+    onLoopDone: () => console.log(`loop completed after 3 runs.`),
+  });
+
   return (
     <div className="bg-base-200 ">
       <div id="home" className="h-screen lg:container mx-auto lg:rounded-lg">
@@ -10,19 +28,17 @@ const Home = () => {
             <div>
               <h1 className="text-5xl text-neutral ">MD. ABDUR RAZZAK</h1>
               <h1 className="text-primary text-7xl font-bold hover:text-blue-400 transition-colors">
-                FRONT END WEB DEVELOPER
+                FRONT END WEB DEVELOPE
               </h1>
-
-              <p className="lg:w-3/5 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                porro itaque magni, adipisci veritatis, eum eius sunt excepturi
-                exercitationem commodi dolorum reiciendis accusamus fugiat.
-                Nostrum, accusamus. Numquam, veritatis nisi? Nostrum doloribus
-                dignissimos corrupti esse alias fugit aspernatur dolorum officia
-                possimus. Deserunt sit optio quo dolores adipisci soluta
-                praesentium autem vitae in. Vel voluptatem ut molestiae iusto
-                dolorum rerum itaque nihil.
-              </p>
+              <h2 className="lg:text-[30px]">
+                {" "}
+                Not just profession! Web Development is my passion. My love. I
+                work with ,<br />
+                <span className=" mt-6  font-bold h-32 ">
+                  {text}
+                  <Cursor cursorStyle="_" />
+                </span>
+              </h2>
             </div>
             <button className="btn btn-primary">
               <a

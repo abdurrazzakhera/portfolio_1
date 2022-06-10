@@ -1,0 +1,38 @@
+[
+    {
+        "_id":1,
+        "project_name":"Bicycle GearWorld",
+        "dec":["Use JavaScript React Latest version.","React Router V6 use (latest Version).","Implement latest Log in Method with Google.","Protected Router Setup.","Use mongodb crud operation.","google firebase use for authentication."],
+        "tech_used":["React Js" , "JavaScript" , "Node js","Express Js","Mongo DB","Jwt","Stripe","Firebase"],
+        "live_link":"https://manufacture-site-12.web.app/",
+        "github_clint":"https://github.com/abdurrazzakhera/bicycle_manufacture_clint",
+        "github_server":"https://github.com/abdurrazzakhera/bicycle_manufacture_server",
+        "project_img1":"https://i.ibb.co/z4KK2Fk/projec1-img1.png",
+        "project_img2":"https://i.ibb.co/bWkVXn2/projec1-img2.png",
+        "project_img3":"https://i.ibb.co/Xy5K83x/projec1-img3.png "
+    },
+    {
+        "_id":2,
+        "project_name":"Gadget Mart || WereHouse",
+        "dec":["Use JavaScript React Latest version.","React Router V6 use (latest Version).","Implement latest Log in Method with Google.","Protected Router Setup.","Use mongodb crud operation.","google firebase use for authentication."],
+        "tech_used":["React Js" , "JavaScript" , "Node js","Express Js","Mongo DB","Jwt","Stripe","Firebase"],
+        "live_link":"https://werehouse-11.web.app/",
+        "github_clint":"https://github.com/abdurrazzakhera/gadget_mart_wereHouse_clint",
+        "github_server":"https://github.com/abdurrazzakhera/-gadget_mart_wereHouse_server",
+        "project_img1":"https://i.ibb.co/z6vXHNv/project2-img1.png",
+        "project_img2":"https://i.ibb.co/Lv4fdyj/project2-img2.png",
+        "project_img3":"https://i.ibb.co/qszCXnG/project2-img3.png"
+    },
+    {
+        "_id":3,
+        "project_name":"AR'H Photography.",
+        "dec":["Use JavaScript React Latest version.","React Router V6 use (latest Version).","Implement latest Log in Method with Google.","Protected Router Setup.","Use mongodb crud operation.","google firebase use for authentication."],
+        "tech_used":["React Js" , "JavaScript" , "Node js","Express Js","Mongo DB","Jwt","Stripe","Firebase"],
+        "live_link":"https://independent-service-prov-34e04.web.app/",
+        "github_clint":"https://github.com/abdurrazzakhera/single_servies_arHera_Creative",
+        "github_server":"",
+        "project_img1":"https://i.ibb.co/4gg15LM/project3-img1.png",
+        "project_img2":"https://i.ibb.co/YLkn70x/project3-img2.png",
+        "project_img3":"https://i.ibb.co/sQdzgwD/project3-img3.png"
+    }
+]
