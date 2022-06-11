@@ -5,7 +5,7 @@ const about = () => {
   return (
     <div id="about" className="h-screen mt-5">
       <div className="lg:container grid lg:grid-cols-12 gap-5 mx-auto">
-        <div className="bg-base-200 col-span-7 flex flex-col justify-center items-center">
+        <div className=" col-span-7 flex flex-col justify-center items-center">
           <h1 className="text-4xl">About Me!</h1>
           <h2 className="text-2xl">
             I am a web developer with proficiency in front-end technologies like

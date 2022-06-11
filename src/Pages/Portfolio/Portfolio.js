@@ -1,10 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import projectImg1 from "../../images/material/projec1_img1.png";
 import projectImg2 from "../../images/material/project2_img1.png";
 import projectImg3 from "../../images/material/project3_img1.png";
 
 const Portfolio = ({ project }) => {
-  console.log(project);
+  const navigate = useNavigate();
   const {
     _id,
     project_name,
@@ -18,7 +19,7 @@ const Portfolio = ({ project }) => {
   } = project;
 
   const explore = (id) => {
-    console.log(id);
+    navigate(`/projects/${id}`);
   };
   return (
     <div class="card card-compact bg-base-100 shadow-xl  ">
@@ -46,15 +47,18 @@ const Portfolio = ({ project }) => {
           >
             Live Site
           </a>
-          <a
+          <button onClick={() => explore(_id)} class="btn btn-sm btn-secondary">
+            Explore
+          </button>
+          {/* <a
             href={github_clint}
             className="btn btn-sm btn-secondary"
             target="_blank"
             rel="noreferrer"
           >
             Clint
-          </a>
-          {github_server ? (
+          </a> */}
+          {/* {github_server ? (
             <>
               <a
                 href={github_server}
@@ -67,7 +71,7 @@ const Portfolio = ({ project }) => {
             </>
           ) : (
             ""
-          )}
+          )} */}
         </div>
       </div>
     </div>

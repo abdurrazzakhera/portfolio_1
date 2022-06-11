@@ -1,18 +1,21 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home/Home";
-import About from "./Pages/Home/About";
+import MainHome from "./Pages/Home/MainHome";
+import ProjectDetails from "./Pages/Portfolio/ProjectDetails";
+
 import Navbar from "./Pages/Shared/Navbar";
-import Portfolios from "./Pages/Portfolio/Portfolios";
-import Contactme from "./Pages/Home/Contactme";
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Home></Home>
-      <Portfolios></Portfolios>
-      <About></About>
-      <Contactme></Contactme>
+      <Routes>
+        <Route path="/" element={<MainHome></MainHome>} />
+        <Route
+          path="/projects/:projectId"
+          element={<ProjectDetails></ProjectDetails>}
+        />
+      </Routes>
     </div>
   );
 }
